@@ -10,7 +10,7 @@
     <style type="text/css">
         body
         {
-            background: linear-gradient(SteelBlue, black);
+            background: linear-gradient( #537895, #09203f);
             background-size: cover;
             background-position: center;
             margin: 0 auto;
@@ -25,7 +25,8 @@
             font-family: calibri;
             padding-right: 15px;
             padding-left: 15px;
-            border-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
         }
         .navdiv{
             display: flex;
@@ -49,16 +50,43 @@
             margin-bottom:20px;
         }
         button{
-            background-color: brown;
+            background-color: #537895;
             margin-left: 10px;
             border-radius: 10px;
             padding: 10px;
             width: 90px;
+            border: 2px solid white;
         }
         button a{
-            color:red;
+            color:white;
             font-weight: bold;
-            font-size: 15px;
+            font-size: 17px;
+            font-family: calibri;
+        }
+        button:hover{
+            border-radius:15px;
+            border: 2px solid lightblue;
+        }
+        button a:hover{
+            color:lightblue;
+        }
+
+        .spiner{
+            background: url("Images/youtube_racheal_background_potato_v1.png");
+            background-size: cover;
+            overflow: hidden;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 5px solid black;
+            animation: ani 3s linear infinite;
+            background-position: center;
+            margin: 0 auto;
+        }
+        @keyframes ani{
+            to{
+                transform: rotate(360deg);
+            }
         }
     </style>
 </head>
@@ -67,21 +95,29 @@
         <div class="navdiv">
             <a href="index.html"><img src="Images/youtube_racheal_background_potato_v1.png" class="btn" width="70" height="70" /></a>
             <ul>
+                <!--
                 <li><a href="index.html">Home</a></li>
                 <li><a href="MyWork.html">My Work</a></li>
                 <li><a href="AboutMe.html">About Me</a></li>
                 <li><a href="Privacy.html">Privacy</a></li>
                 <li><a href="LogInPage.html">Login</a></li>
+                -->
+                <button><a href="index.html">Home</a></button>
+                <button><a href="MyWork.html">Work</a></button>
+                <button><a href="AboutMe.html">About</a></button>
+                <button><a href="Privacy.html">Privacy</a></button>
+                <button><a href="LogInPage.html">Login</a></button>
             </ul>
         </div>
     </nav>
 </body>
 
-<div style="text-align:center; font-family: calibri">
-    <h1 style="color:white; font-size: 50px; text-transform:uppercase;">About Me</h1>
+<div style="text-align:center; font-family: calibri; color: white">
+    <h1 style="font-size: 50px; text-transform:uppercase;">About Me</h1>
 
-    <p style="color:white">This page will contain information about the amazing person that is Brandon Schuitema!</p>
-    <p style="color:white">Other than making video games, I also like reading. I have read A LOT of books. Ask me about them sometime.</p>
+    <p>This page will contain information about the amazing person that is Brandon Schuitema!</p>
+    <P>I post games on Itch.io. Feel free to play some of them!</P>
+    <p>Other than making video games, I also like reading. I have read A LOT of books. Ask me about them sometime.</p>
 </div>
 
 <p style="color: rgba(0, 0, 0, 0)">This is black space.</p>
@@ -90,7 +126,7 @@
     <p>I love learning new things, so this list might not always be accurate.</p>
     <p>It's possible I've been learning a new program and skill set. If you're curious, just ask.</p>
     <details>
-        <summary style="color:white; font-size: 25px; text-transform: uppercase;">Skills</summary>
+        <summary style="color: lightblue; font-size: 25px; text-transform: uppercase;">Skills</summary>
         <p>Unity/ C#</p>
         <p>Maya/ Blender</p>
         <p>Jira/ Figma</p>
@@ -100,6 +136,7 @@
         <p>HTML</p>
         <p>CSS</p>
         <p>Python</p>
+        <p>JavaScript</p>
         <p>And more!</p>
     </details>
 </div>
@@ -107,15 +144,16 @@
 <p style="color: rgba(0, 0, 0, 0)">This is black space.</p>
 
 <div style="text-align: center; font-family: calibri; color: white">
-    <fieldset style="border: 10px solid black; border-radius: 50px;">
+    <fieldset style="border: 10px solid black; border-radius: 50px; width: 90%; margin: 0 auto;">
         <p style="font-size: 25px; text-transform: uppercase;">Social Links</p>
-        <a href="https://koopwhip1129.itch.io/"><img src="Images/itch-io.png" class="btn" width="80" height="70" /></a>
-        <a href="https://www.linkedin.com/in/brandon-schuitema-ba507b135/"><img src="Images/linkedIn.png" class="btn" width="70" height="60" /></a>
+        <a href="https://koopwhip1129.itch.io/" target="__blank"><img src="Images/itch-io.png" class="btn" width="80" height="70" /></a>
+        <a href="https://www.linkedin.com/in/brandon-schuitema-ba507b135/" target="__blank"><img src="Images/linkedIn.png" class="btn" width="70" height="60" /></a>
     </fieldset>
 </div>
-
-<p style="color: rgba(0, 0, 0, 0)">This is black space.</p>
-<p style="color: rgba(0, 0, 0, 0)">This is black space.</p>
-<p style="color: rgba(0, 0, 0, 0)">This is black space.</p>
-
+<br>
+<br>
+<div class="spiner">
+    <!--This is just here for the spinner in the background.-->
+</div>
+<br>
 </html>

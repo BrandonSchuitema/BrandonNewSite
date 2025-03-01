@@ -10,7 +10,7 @@
     <style type="text/css">
         body
         {
-            background: linear-gradient(SteelBlue, black);
+            background: linear-gradient( #537895, #09203f);
             background-size: cover;
             background-position: center;
             margin: 0 auto;
@@ -25,7 +25,8 @@
             font-family: calibri;
             padding-right: 15px;
             padding-left: 15px;
-            border-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
         }
         .navdiv{
             display: flex;
@@ -96,7 +97,7 @@
             margin-bottom: 20px;
             color: white;
         }
-        button{
+        .lbutton{
             background: rgb(45, 126, 231);
             height: 40px;
             line-height: 40px;
@@ -106,18 +107,64 @@
             box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
             color: white;
         }
+        .nbutton{
+            background-color: #537895;
+            margin-left: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 90px;
+            border: 2px solid white;
+        }
+        button a{
+            color:white;
+            font-weight: bold;
+            font-size: 17px;
+            font-family: calibri;
+        }
+        .nbutton:hover{
+            border-radius:15px;
+            border: 2px solid lightblue;
+        }
+        button a:hover{
+            color:lightblue;
+        }
+        
+        .spiner{
+            background: url("Images/youtube_racheal_background_potato_v1.png");
+            background-size: cover;
+            overflow: hidden;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 5px solid black;
+            animation: ani 3s linear infinite;
+            background-position: center;
+            margin: 0 auto;
+        }
+        @keyframes ani{
+            to{
+                transform: rotate(360deg);
+            }
+        }
     </style>
 </head>
 <body>
     <nav class="navbar">
         <div class="navdiv">
             <a href="index.html"><img src="Images/youtube_racheal_background_potato_v1.png" class="btn" width="70" height="70" /></a>
-            <ul>
+            <ul style="font-family: calibri">
+                <!--
                 <li><a href="index.html">Home</a></li>
                 <li><a href="MyWork.html">My Work</a></li>
                 <li><a href="AboutMe.html">About Me</a></li>
                 <li><a href="Privacy.html">Privacy</a></li>
                 <li><a href="LogInPage.html">Login</a></li>
+                -->
+                <button class="nbutton"><a href="index.html">Home</a></button>
+                <button class="nbutton"><a href="MyWork.html">Work</a></button>
+                <button class="nbutton"><a href="AboutMe.html">About</a></button>
+                <button class="nbutton"><a href="Privacy.html">Privacy</a></button>
+                <button class="nbutton"><a href="LogInPage.html">Login</a></button>
             </ul>
         </div>
     </nav>
@@ -132,7 +179,7 @@
         <input type="text">
         <label>Password</label>
         <input type="text">
-        <button>Submit</button>
+        <button class="lbutton">Submit</button>
     </form>
 </div>
 
@@ -140,5 +187,9 @@
 
 <p style="color: white; text-align: center; font-family: calibri;">Login page is for Brandon Schuitema purposes only.</p>
 <p style="color: white; text-align: center; font-family: calibri;">If there is any reason you need to log in contact Brandon Schuitema.</p>
-
+<br>
+<div class="spiner">
+    <!--This is just here for the spinner in the background.-->
+</div>
+<br>
 </html>

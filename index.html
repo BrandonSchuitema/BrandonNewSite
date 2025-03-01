@@ -11,7 +11,7 @@
         body
         {
             /* background-image: url("Images/Page_Background.png"); */
-            background: linear-gradient(SteelBlue, black);
+            background: linear-gradient( #537895, #09203f);
             background-size: cover;
             background-position: center;
             margin: 0 auto;
@@ -26,7 +26,8 @@
             font-family: calibri;
             padding-right: 15px;
             padding-left: 15px;
-            border-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
         }
         .navdiv{
             display: flex;
@@ -49,16 +50,25 @@
             margin-right: 25px;
         }
         button{
-            background-color: brown;
+            background-color: #537895;
             margin-left: 10px;
             border-radius: 10px;
             padding: 10px;
             width: 90px;
+            border: 2px solid white;
         }
         button a{
-            color:red;
+            color:white;
             font-weight: bold;
-            font-size: 15px;
+            font-size: 17px;
+            font-family: calibri;
+        }
+        button:hover{
+            border-radius:15px;
+            border: 2px solid lightblue;
+        }
+        button a:hover{
+            color:lightblue;
         }
 
         .picture{
@@ -73,6 +83,25 @@
             background-position: center;
             overflow: hidden;
             margin: 0 auto;
+
+        }
+
+        .spiner{
+            background: url("Images/youtube_racheal_background_potato_v1.png");
+            background-size: cover;
+            overflow: hidden;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 5px solid black;
+            animation: ani 3s linear infinite;
+            background-position: center;
+            margin: 0 auto;
+        }
+        @keyframes ani{
+            to{
+                transform: rotate(360deg);
+            }
         }
     </style>
 </head>
@@ -81,18 +110,25 @@
         <div class="navdiv">
             <a href="index.html"><img src="Images/youtube_racheal_background_potato_v1.png" class="btn" width="70" height="70" /></a>
             <ul>
+                <!--
                 <li><a href="index.html">Home</a></li>
                 <li><a href="MyWork.html">My Work</a></li>
                 <li><a href="AboutMe.html">About Me</a></li>
                 <li><a href="Privacy.html">Privacy</a></li>
                 <li><a href="LogInPage.html">Login</a></li>
+                -->
+                <button><a href="index.html">Home</a></button>
+                <button><a href="MyWork.html">Work</a></button>
+                <button><a href="AboutMe.html">About</a></button>
+                <button><a href="Privacy.html">Privacy</a></button>
+                <button><a href="LogInPage.html">Login</a></button>
             </ul>
         </div>
     </nav>
 </body>
 
 <div style="text-align:center; font-family: calibri; color: white">
-    <h1 style="font-size: 75px; text-transform:uppercase;">Welcome</h1>
+    <h1 style="font-size: 75px; text-transform:uppercase;">Brandon Schuitema</h1>
     <div class="picture">
         <!--Maybe I'll stuff in here. But I mainly just wanted that big picture.-->
     </div>
@@ -107,6 +143,11 @@
     If you have any questions, feel free to send them an email:
 </p>
 <p style="text-align: center; color: white">Bschuitema4949@conestogac.on.ca</p>
+<br>
+<div class="spiner">
+    <!--This is just here for the spinner in the background.-->
+</div>
+<br>
 </html>
 
 <!--Perhaps I could use photoshop to make custome title texts and things for backgrounds and stuff.-->
