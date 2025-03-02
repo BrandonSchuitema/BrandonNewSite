@@ -71,11 +71,23 @@
             color:lightblue;
         }
 
-        /*
-        .slink:hover{
-            I want something here, but the images aren't of great sizing.  
+        .slink{
+            border: 2px solid rgba(0, 0, 0, 0);
         }
-        */
+        .slink:hover{
+            border: 2px solid lightblue;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+        }
+
+        .slist{
+            border: 2px solid rgba(0, 0, 0, 0);
+        }
+        .slist:hover{
+            border: 2px solid lightblue;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+        }
 
         .spiner{
             background: url("Images/youtube_racheal_background_potato_v1.png");
@@ -101,13 +113,6 @@
         <div class="navdiv">
             <a href="index.html"><img src="Images/youtube_racheal_background_potato_v1.png" class="btn" width="70" height="70" /></a>
             <ul>
-                <!--
-                <li><a href="index.html">Home</a></li>
-                <li><a href="MyWork.html">My Work</a></li>
-                <li><a href="AboutMe.html">About Me</a></li>
-                <li><a href="Privacy.html">Privacy</a></li>
-                <li><a href="LogInPage.html">Login</a></li>
-                -->
                 <button><a href="index.html">Home</a></button>
                 <button><a href="MyWork.html">Work</a></button>
                 <button><a href="AboutMe.html">About</a></button>
@@ -138,20 +143,23 @@
     <br>
 
     <details>
-        <summary style="font-size: 17px; color: lightblue; font-size: 30px; text-transform: uppercase;">Program Skills</summary>
-        <p>Unity/ C#</p>
-        <p>Unreal Engine/ C++/ Blueprints</p>
-        <p>Maya/ Blender</p>
-        <p>Adobe Substance 3D Painter</p>
-        <p>Photoshop</p>
-        <p>Jira/ Figma</p>
-        <p>HTML</p>
-        <p>CSS</p>
-        <p>Python</p>
-        <p>JavaScript</p>
-        <p>Microsoft Work</p>
-        <P>Google Docs</P>
-        <p>And more!</p>
+        <summary class="slink" style="font-size: 17px; color: lightblue; font-size: 30px; text-transform: uppercase;">Program Skills</summary>
+        <div style="font-size: 17; font-family: calibri; padding: 10px;">
+            <p class="slist" style="width: 300px; margin: 0 auto; padding: 5px;">Unity/ C#</p>
+            <p class="slist" style="width: 300px; margin: 0 auto; padding: 5px;">Unreal Engine/ C++/ Blueprints</p>
+            <p class="slist" style="width: 300px; margin: 0 auto; padding: 5px;">Maya/ Blender</p>
+            <p class="slist" style="width: 300px; margin: 0 auto; padding: 5px;">Adobe Substance 3D Painter</p>
+            <p class="slist" style="width: 300px; margin: 0 auto; padding: 5px;">Photoshop</p>
+            <p class="slist" style="width: 300px; margin: 0 auto; padding: 5px;">Jira/ Figma</p>
+            <p class="slist" style="width: 300px; margin: 0 auto; padding: 5px;">HTML</p>
+            <p class="slist" style="width: 300px; margin: 0 auto; padding: 5px;">CSS</p>
+            <p class="slist" style="width: 300px; margin: 0 auto; padding: 5px;">Python</p>
+            <p class="slist" style="width: 300px; margin: 0 auto; padding: 5px;">JavaScript</p>
+            <p class="slist" style="width: 300px; margin: 0 auto; padding: 5px;">Microsoft Work</p>
+            <P class="slist" style="width: 300px; margin: 0 auto; padding: 5px;">Google Docs</P>
+            <p class="slist" style="width: 300px; margin: 0 auto; padding: 5px;">And more!</p>
+            <img src="Images/youtube_racheal_background_potato_v1.png" width="50" height="50" />
+        </div>
     </details>
 </div>
 
@@ -161,8 +169,8 @@
 <div style="text-align: center; font-family: calibri; color: white">
     <fieldset style="border: 10px solid black; border-radius: 50px; width: 90%; margin: 0 auto; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);">
         <p style="font-size: 30px; text-transform: uppercase;">Social Links</p>
-        <a href="https://koopwhip1129.itch.io/" target="__blank"><img src="Images/itch-io.png" class="slink" class="btn" width="80" height="70" /></a>
-        <a href="https://www.linkedin.com/in/brandon-schuitema-ba507b135/" target="__blank"><img src="Images/linkedIn.png" class="slink" class="btn" width="70" height="60" /></a>
+        <a href="https://koopwhip1129.itch.io/" target="__blank"><img src="Images/itch-io.png" class="slink" class="btn" width="70" height="70" /></a>
+        <a href="https://www.linkedin.com/in/brandon-schuitema-ba507b135/" target="__blank"><img src="Images/linkedIn.png" class="slink" class="btn" width="70" height="70" /></a>
     </fieldset>
 </div>
 <br>
